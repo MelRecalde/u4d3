@@ -2,15 +2,20 @@ package Es1;
 
 public class E1 {
 
-    int height;
-    int base;
+    private double height;
+    private double base;
 
-    //METHODS
-    public int getPerimeter() {
-        return 2 * (this.base + this.height);
+    public E1(double h, double b) {
+        this.height = h;
+        this.base = b;
     }
 
-    public int getArea() {
-        return this.base * this.height;
+    //METHODS
+    public double getPerimeter() {
+        return 2 * (base + height);
+    }
+
+    public double getArea() {
+        return base * height;
     }
 }
